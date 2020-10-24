@@ -60,18 +60,54 @@
     --grey-bg: #F5F4FA;
    }
 
+ html{
+    box-sizing: border-box;
+}
+
+*,*::before,
+*::after{
+    box-sizing: inherit;
+}
+
 body{
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
+    text-align: center;
+    display: inline-block;
+    width: 1600px;
 }
 
 li{
     list-style: none;
 }
 
+.container{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    outline: 2px solid tomato;
+    padding-left: 15px;
+    padding-right: 15px;    
+}
+
+.container-nav{
+    display: flex;
+    align-items: center;
+
+    background-color: var(--white);
+}
+
+.header-nav{
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    background-color: var(--white);
+    border-bottom: 1px solid #ECECEC;
+}
 .link {
     color: inherit;
     text-decoration: none;
@@ -138,37 +174,44 @@ li{
     color: rgba(255, 255, 255, 0.6);
 }
     /* hero */
-
 .hero-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
+     /*text-align: center;*/
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white);
+    padding: 200px 452px 280px;
 }
     
 .hero-button{
     font-family: "Roboto", sans-serif;
     color: var(--white);
     background-color: var(--accent-color);
+    display: inline-block;
     text-decoration: none;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     /* text bg */
-    display: flex;
     align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
+    /*text-align: center;*/
     border-radius: 4px;
     border:none;
+    padding: 10px 32px;
+    height: 50px;
+    min-width: 200px;
 }
 
-.hero,
+.hero{
+    height: 600px;
+    background-color: var(--dark-bg);
+    text-align: center;
+}
 footer{
     background-color: var(--dark-bg);
+    text-align: center;
 }
 
     /*Details List*/
@@ -222,11 +265,13 @@ line-height: 1.71;
    background-color: var(--grey-bg);
    border-radius: 4px;
    border:none;
+   padding: 6px 22px;
 }
 
 .project-types-button:hover,
 .project-types-button:focus{
     background-color: var(--accent-color);
+    color: var(--white);
 }
 
 .project-name{
@@ -241,3 +286,4 @@ line-height: 1.71;
     font-size: 16px;
     line-height: 1.87;
 }
+
