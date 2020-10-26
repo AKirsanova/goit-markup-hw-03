@@ -207,7 +207,8 @@ li{
 }
 .site-contacts{
     display: flex;
-    
+    flex-direction: column;
+    text-align: left;
 }
 
 
@@ -286,6 +287,7 @@ footer{
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    text-align: left;
     margin-top: 0px;
     margin-bottom: 10px;
     color: var(--black)
@@ -299,6 +301,7 @@ footer{
     letter-spacing: 0.03em;
     width: 270px;
     height: 75px;
+    text-align: left;
 }
 
 .details-list .item{
@@ -336,9 +339,7 @@ footer{
     line-height: 1.19; 
     }
 
-.team-list .item{
-    
-}
+
     /*Bg Team list*/    
 .section-team {
     background-color: var(--grey-bg);
@@ -351,6 +352,8 @@ footer{
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
+    text-align: left;
+
     color: var(--white);
 }
  
