@@ -398,14 +398,12 @@ footer{
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    margin-top: 20px;
     color: var(--black);
 }
 
 .project-class{
     font-size: 16px;
     line-height: 1.87;
-    margin-bottom: 20px;
 }
 .work-img{
     display: flex;
@@ -443,11 +441,16 @@ footer{
 
 .project-img .item{
     margin-bottom: 30px;
+
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;     
 }
 
+.project-content{
+    text-align: left;
+    padding: 20px 24px;
+}
 .project-img .item:nth-child(3n){
     margin-right: 0px;
 }
