@@ -369,11 +369,24 @@ footer{
     line-height: 1.71;
     text-align: left;
 
-    margin-top: 20px;
-
     color: var(--white);
 }
- 
+.contacts{
+    margin-top: 20px;
+}
+
+.footer-content{
+    width: 270px;
+}
+
+.footer .logo-web{
+    margin-bottom: 20px;
+}
+
+.footer .site-contacts-link-2{
+    margin-bottom: 9px;
+}
+
 .project-types-button{
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -419,6 +432,7 @@ footer{
 
 .projects{
     padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .project-types-list{
@@ -456,5 +470,5 @@ footer{
 }
 
 .project-img .item:nth-last-child(-n + 3) {
-    margin-bottom: 94px;
+    margin-bottom: 0px;
 }
